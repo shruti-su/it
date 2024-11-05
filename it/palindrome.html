@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Palindrome number</title>
+</head>
+<body>
+    <script>
+        let num = prompt("Enter a number");
+        let reverseNum = num.split('').reverse().join('');
+
+        if (num == reverseNum) {
+            alert(num + " is a palindrome number");
+        } else {
+            alert(num + " is not a palindrome number");
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Check Prime number</title>
+    </head>
+    <body>
+        <script>
+            function isPrime(num) {
+                if (num <= 1) 
+                return false;
+                for (let i = 2; i < num; i++) {
+                    if (num % i === 0) 
+                    return false;
+                }
+                return true;
+            }
+
+            let num = parseInt(prompt("Enter a number:"));
+            if (isNaN(num)) {
+                alert("Invalid input! Please enter a number.");
+            } else {
+                if (isPrime(num)) {
+                    alert(`${num} is a prime number.`);
+                } else {
+                    alert(`${num} is not a prime number.`);
+                }
+            }
+        </script>
+    </body>
+</html>

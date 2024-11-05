@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sum of digits</title> 
+    </head>
+    <body>
+        <script>
+            function sumOfDigits(num) {
+                let sum = 0;
+                const numstr = num.toString();
+                for(let i = 0; i < numstr.length; i++) {
+                    sum += parseInt(numstr[i]);
+                }
+                return sum;
+            }
+            
+            let num = parseInt(prompt('Enter your numbers :'));
+            let result = sumOfDigits(num);
+            document.write(`The sum of digits of ${num} is ${result}`);
+        </script>
+    </body>
+</html>

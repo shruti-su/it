@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fibonacci</title>
+</head>
+<body>
+    <script>
+        let num ;
+        num=window.prompt("enter the value:");
+        let a = 0;
+        let b = 1;
+        let c = 0;
+        document.write("Fibonacci series : " + a + ", " + b);
+
+        for(let i=2; i<num; i++){
+            c = a + b;
+            document.write(", " + c);
+            a = b;
+            b = c;
+        } 
+    </script>
+</body>
+</html>

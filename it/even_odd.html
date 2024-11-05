@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Even and odd check</title>
+    </head>
+    <body>
+        <script>
+            function checkevenodd(){
+                if (isNaN(num)) {
+                alert("Invalid input! Please enter a number.");
+            } else {
+                if (num % 2 === 0) {
+                    document.write(`${num} is an even number.`);
+                } else {
+                    document.write(`${num} is an odd number.`);
+                }
+            }
+            }
+            let num = parseInt(prompt("Enter a number:"));
+            checkevenodd();
+        </script>
+    </body>
+</html>

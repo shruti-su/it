@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Check lipear</title>
+  </head>
+  <body>
+    <script>
+      function isLeap(year) {
+        if (isNaN(year)) {
+          alert("Invalid input! Please enter a number.");
+        } else {
+          if (year % 400 === 0) {
+            return true;
+          } else if (year % 4 === 0) {
+            return true;
+          } else {
+            return false;
+          }
+        }
+      }
+      let year = parseInt(prompt("Enter a year:"));
+      let result = isLeap(year);
+      if (result) {
+        document.write(`${year} is a leap year.`);
+      } else {
+        document.write(`${year} is not a leap year.`);
+      }
+    </script>
+  </body>
+</html>

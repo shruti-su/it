@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multiplication table</title>
+    </head>
+    <body>
+        <script>
+            function generateMultiplicationTable(n) {
+                let table = "<table>";
+                for (let i = 1; i <= n; i++) {
+                    table += "<tr>";
+                    for (let j = 1; j <= n; j++) {
+                        table += "<td>" + i * j + "</td>";
+                    }
+                    table += "</tr>";
+                }
+                table += "</table>";
+                document.write(table);
+            }
+            generateMultiplicationTable(10);
+        </script>
+    </body>
+</html>
